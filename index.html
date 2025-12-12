@@ -1534,8 +1534,6 @@
       pdf.setFont(undefined, 'bold');
       pdf.text('Pregunta', margin, yPosition);
       pdf.text('Respuesta', margin + 30, yPosition);
-      pdf.text('Valor', margin + 120, yPosition);
-      pdf.text('Observaciones', margin + 150, yPosition);
       pdf.setFont(undefined, 'normal');
       yPosition += 6;
       
@@ -1556,12 +1554,8 @@
           pdf.setFont(undefined, 'bold');
           pdf.text('Pregunta', margin, yPosition);
           pdf.text('Respuesta', margin + 30, yPosition);
-          pdf.text('Valor', margin + 120, yPosition);
-          pdf.text('Observaciones', margin + 150, yPosition);
-          pdf.setFont(undefined, 'normal');
-          yPosition += 6;
-          pdf.line(margin, yPosition, pageWidth - margin, yPosition);
-          yPosition += 6;
+               pdf.setFont(undefined, 'normal');
+                yPosition += 6;
         }
         
         // Question number
@@ -1584,7 +1578,7 @@
         pdf.text(numericValue, margin + 120, yPosition);
         
         // Space for observations
-        pdf.text('_________________', margin + 150, yPosition);
+     
         
         yPosition += 6;
         
